@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.wrapper {
+
+    height: 100vh;
+    background-color: #081828;
+}
+
+.mycontainer {
+    width: 33%;
+    padding: 60px 60px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.h1-custom {
+    text-align: center;
+    font-size: 90px;
+    color: #7e57ff;
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.h2-custom {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #081828;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+}
+
+.wrapper .custom-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myButton {
+    padding: 14px 30px;
+    font-weight: 500;
+    background-color: #7e57ff;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    transition: all .5s ease;
+    margin-top: 10px;
+    z-index: 1;
+
+}
+
+.myp {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.buttonWrappper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.myButton:hover {
+    color: #fff;
+    background-color: #081828;
+}
+
+@media only screen and (min-width: 200px) {
+    .mycontainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .mycontainer {
+        width: 33%;
+    }
+}

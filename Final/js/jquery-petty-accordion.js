@@ -1,0 +1,16 @@
+
+$(document).ready(function () {
+   
+    $(function () {
+        if ($('.accordion-list').length) {
+            $('.accordion-list').on('click', '.accordion-title', function (e) {
+                e.preventDefault();
+                $(this).closest('.accordion-list-item').siblings().removeClass('open').find('.accordion-desc').slideUp();
+                $(this).closest('.accordion-list-item').siblings().find('.ni').addClass('ni-plus').removeClass('ni-minus');
+                $(this).closest('.accordion-list-item').toggleClass('open').find('.accordion-desc').slideToggle();
+                $(this).find('.ni').toggleClass('ni-plus ni-minus');
+            });
+        }
+    });
+
+});
